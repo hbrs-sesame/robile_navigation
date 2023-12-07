@@ -2,15 +2,19 @@
 
 <launch>
 
-  <arg name="map_file" default="$(find robile_navigation)/maps/willow_garage_map.yaml"/>
+  <arg name="map_file" default="$(find floorplan-dsl-environments)/maps/brsu_building_c/brsu_building_c.yaml"/>
   <arg name="local_planner" default="dwa" doc="Local planner can be either dwa, base, teb or pose"/>
   <arg name="robot_name_1" default="robile_john"/>
+  <arg name="initial_pose_x" default="0.0"/>
+  <arg name="initial_pose_y" default="0.0"/>
 
   <!-- Map server -->
   <node pkg="map_server" name="map_server" type="map_server" args="$(arg map_file)"/>
 
   <!-- AMCL -->
   <include file="$(find robile_navigation)/launch/amcl.launch">
+    <arg name="initial_pose_x" value="$(arg initial_pose_x)"/>
+    <arg name="initial_pose_y" value="$(arg initial_pose_y)"/>
   </include>
 
   <!-- move_base -->

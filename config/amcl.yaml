@@ -37,7 +37,7 @@ base_frame_id: "base_link"
 global_frame_id: "map"
 transform_tolerance: 0.5
 
-# initial pose
-initial_pose_x: 0.0
-initial_pose_y: 0.0
+# # initial pose
+# initial_pose_x: 0.0
+# initial_pose_y: 0.0
 initial_pose_a: 0.0

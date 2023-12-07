@@ -6,9 +6,9 @@ global_costmap:
   robot_base_frame: base_link
 
   # The frequency in Hz for the map to be updated.
-  update_frequency: 10.0
+  update_frequency: 1.0
   # The frequency in Hz for the map to publish display information.
-  publish_frequency: 10.0
+  publish_frequency: 1.0
   # Specifies the delay in transform (tf) data that is tolerable in seconds.
   # This parameter serves as a safeguard to losing a link in the tf tree while
   # still allowing an amount of latency the user is comfortable with to exist in the system.
@@ -22,3 +22,5 @@ global_costmap:
   # Whether or not to use the static map to initialize the costmap.
   # If the rolling_window parameter is set to true, this parameter must be set to false.
   static_map: true
+  width: 130
+  height: 130
