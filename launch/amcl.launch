@@ -2,7 +2,7 @@
 
 <launch>
   <!-- Arguments -->
-  <arg name="scan_topic"     default="robile_john/scan_front"/>
+  <arg name="scan_topic"     default="/scan_front"/>
   <arg name="map_topic"     default="map"/>
   <arg name="initial_pose_x" default="0.0"/>
   <arg name="initial_pose_y" default="0.0"/>
@@ -17,6 +17,8 @@
     <remap from="map" to="$(arg map_topic)" />
     <param name="use_map_topic"  value="$(arg use_map_topic)" />
     <rosparam file="$(find robile_navigation)/config/amcl.yaml" command="load" />
+    <param name="initial_pose_x" value="$(arg initial_pose_x)"/>
+    <param name="initial_pose_y" value="$(arg initial_pose_y)"/>
   </node>
 
 </launch>

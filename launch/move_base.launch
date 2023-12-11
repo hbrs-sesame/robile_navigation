@@ -2,8 +2,8 @@
 
 <launch>
   <!-- Arguments -->
-  <arg name="cmd_vel_topic" default="/robile_john/cmd_vel" />
-  <arg name="odom_topic" default="/robile_john/odom" />
+  <arg name="cmd_vel_topic" default="/cmd_vel" />
+  <arg name="odom_topic" default="/odom" />
   <arg name="local_planner" default="dwa" doc="Local planner can be either dwa, dwb, base, teb or pose"/>
 
   <!-- move_base -->
