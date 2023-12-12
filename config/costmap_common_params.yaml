@@ -14,7 +14,7 @@ raytrace_range: 10.0
 # (0.0, 0.0) in the robot_base_frame and that the points are specified in meters, 
 # both clockwise and counter-clockwise orderings of points are supported.
 # footprint: [[-0.08, -0.075], [-0.08, 0.075], [0.105, 0.075], [0.105, -0.075]]
-footprint: [ [0.35, 0.22], [0.35, -0.22], [-0.35, -0.22], [-0.35, 0.22] ]
+footprint: [ [0.35, 0.233], [0.35, -0.233], [-0.35, -0.233], [-0.35, 0.233] ]
 #robot_radius: 0.17
 
 # The radius in meters to which the map inflates obstacle cost values.
