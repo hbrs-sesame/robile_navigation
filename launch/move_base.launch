@@ -3,6 +3,7 @@
     
     <arg name="controller_frequency" default="5.0"/>
     <arg name="costmap_params_dir" default="$(find robile_navigation)/config"/>
+    <arg name="local_planner" default="base_local_planner" />
 
     <node pkg="move_base" type="move_base" respawn="false" ns="/" name="move_base" output="screen">
         <!-- Load common costmap params -->
