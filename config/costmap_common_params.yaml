@@ -33,4 +33,4 @@ map_type: costmap
 observation_sources: scan
 # Definition of the "scan" observation source. Make sure to set the sensor_frame to the same 
 # name of the laser frame link that is defined in the robot_description. Otherwise the local costamp won't work.
-scan: {sensor_frame: base_laser_front_link, data_type: LaserScan, topic: robile_john/scan_front, marking: true, clearing: true}
+scan: {sensor_frame: base_laser_front_link, data_type: LaserScan, topic: scan_front, marking: true, clearing: true}
