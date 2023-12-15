@@ -5,10 +5,6 @@
 
 
 
-<!-- Load the map_server -->
-<arg name="robot_env" default="$(optenv ROBOT_ENV !!NO_ROBOT_ENV_SET!!)"/>
-<arg name="map_file" value="$(find robile_default_env_config)/ros/$(arg robot_env).yaml"/>
-<node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)" />
 <arg name="use_map_topic" default="true"/>
 
 
