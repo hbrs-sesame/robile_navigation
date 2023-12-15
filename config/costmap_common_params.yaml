@@ -9,6 +9,6 @@ observation_sources: laser_scan_sensor
 laser_scan_sensor:
     sensor_frame: base_laser
     data_type: LaserScan
-    topic: /scan_filtered
+    topic: /scan_front
     marking: true
     clearing: true
