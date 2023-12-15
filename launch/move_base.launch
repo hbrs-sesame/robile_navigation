@@ -7,7 +7,7 @@
   <arg name="local_planner" default="dwa" doc="Local planner can be either dwa, dwb, base, teb or pose"/>
 
   <!-- move_base -->
-  <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
+  <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen" clear_params="true">
     <!-- base_local_planner parameter is set in the loaded parameter file depending on the local_planner argument -->
     <rosparam file="$(find robile_navigation)/config/$(arg local_planner)_local_planner_params.yaml" command="load" />
     <rosparam file="$(find robile_navigation)/config/move_base_params.yaml" command="load" />
